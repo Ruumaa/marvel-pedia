@@ -29,9 +29,10 @@ const SearchBar = () => {
   }, [querySearch]);
 
   return (
-    <div className="container text-center mb-10">
-      <div className="text-bold text-3xl">
-        <h1>Search for "{querySearch}"</h1>
+    <div className="container mb-10">
+      {/* Carousel */}
+      <div className="text-bold text-4xl">
+        <h1>Result for "{querySearch}"</h1>
       </div>
       {isLoading ? (
         <div>
@@ -39,7 +40,7 @@ const SearchBar = () => {
         </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-10">
-          {characters.map((character) => (
+          {characters.length === 0 ? <p className="text-lg font-semibold">"{querySearch}" not found</p> : characters.map((character) => (
             <CharacterCard key={character.id} character={character} />
           ))}
         </div>

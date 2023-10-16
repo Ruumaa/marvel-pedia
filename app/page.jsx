@@ -1,3 +1,4 @@
+import Carousel from "./components/Carousel";
 import CharacterCard from "./components/CharacterCard";
 import { getCharacters } from "./utils/api";
 
@@ -7,6 +8,7 @@ export default async function Home() {
     <>
       <div className="container text-center mb-10">
         <div className="container text-center">
+          <Carousel/>
           <div className="text-bold text-5xl">
             <h1>Marvel's Characters List</h1>
           </div>

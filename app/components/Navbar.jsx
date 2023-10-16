@@ -17,8 +17,8 @@ const Navbar = () => {
 
   return (
       <div className="navbar bg-base-100 container">
-        <div className="flex-1">
-          <Link href={"/"} className="btn btn-ghost normal-case text-xl">
+        <div className="navbar-center flex-1">
+          <Link href={"/"} className="btn btn-ghost">
             <SiMarvelapp size={30} />
           </Link>
         </div>
