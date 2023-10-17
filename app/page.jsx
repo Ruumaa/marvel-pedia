@@ -1,4 +1,4 @@
-import Carousel from "./components/Carousel";
+import CarouselPage from "./components/Carousel";
 import CharacterCard from "./components/CharacterCard";
 import { getCharacters } from "./utils/api";
 
@@ -7,10 +7,10 @@ export default async function Home() {
   return (
     <>
       <div className="container text-center mb-10">
-        <div className="container text-center">
-          <Carousel/>
-          <div className="text-bold text-5xl">
-            <h1>Marvel's Characters List</h1>
+        <div>
+          <CarouselPage />
+          <div className="font-extrabold text-6xl mt-11 mb-16">
+            <h1><span className="text-transparent bg-clip-text bg-gradient-to-r to-blue-600 from-red-400">Marvel's</span> Character List</h1>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-10">
             {characters.results.map((character) => (

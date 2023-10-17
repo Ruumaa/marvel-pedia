@@ -10,8 +10,8 @@ const CharacterCard = ({ character }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title text-start">{character.name}</h2>
-        <div className="card-actions justify-start">
-          <Link href={`character/${character.id}`} className="btn btn-primary btn-sm mt-5">
+        <div className="card-actions justify-end">
+          <Link href={`character/${character.id}`} className="btn capitalize btn-primary btn-sm mt-5">
             Detail
           </Link>
         </div>

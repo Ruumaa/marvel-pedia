@@ -31,7 +31,7 @@ const SearchBar = () => {
   return (
     <div className="container mb-10">
       {/* Carousel */}
-      <div className="text-bold text-4xl">
+      <div className="font-bold sm:font-extrabold  text-4xl">
         <h1>Result for "{querySearch}"</h1>
       </div>
       {isLoading ? (
